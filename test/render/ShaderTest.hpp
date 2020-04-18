@@ -57,12 +57,6 @@ void test() {
 	aCol.use();
 
 	glClearColor(0.5f, 0.6f, 0.2f, 1.f);
-	
-	auto def_clbck = [](MWindowWin32* const win, MWindowEvent) {
-		glClear(GL_COLOR_BUFFER_BIT);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-		win->swapBuffers();
-	};
 
 	window->getListener()->on<MWindowEventsList::Paint>(
 		[](MWindowWin32* const win, MWindowEvent) {
