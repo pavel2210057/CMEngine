@@ -7,7 +7,7 @@
 namespace MEngine {
 	namespace Global {
 		static MWindowWin32Manager* const windowManager = MWindowWin32Manager::getInstanse();
-		static MRenderManager* const renderManager = MRenderManager::getInstanse();
+		//static MRenderManager* const renderManager = MRenderManager::getInstanse();
 	}
 }
 
